@@ -383,11 +383,18 @@
 					border-radius: 100%;
 					border: 0;
 					color: inherit;
+					transition: transform 0.3s ease; /* انیمیشن نرم */
 				}
 				
 					ul.icons li a:hover
 					{
-						color: #ef8376;
+						/* color: #ef8376; */
+						transform: scale(1.5);
+					}
+					ul.icons li a:focus
+					{
+						/* color: #ef8376; */
+						transform: scale(0.9);
 					}
 
 		ol.style1

@@ -6,7 +6,7 @@ defined('SubTitle') || define('SubTitle', 'توضیح سایت');
 
 ?>
 <!DOCTYPE html>
-<html>
+<html dir="rtl">
 
 <head>
 	<title><?php echo Title; ?></title>
@@ -25,7 +25,26 @@ defined('SubTitle') || define('SubTitle', 'توضیح سایت');
 		<link rel="stylesheet" href="css/style-desktop.css" />
 		<link rel="stylesheet" href="css/style-noscript.css" />
 	</noscript>
+	<link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
 	<link rel="stylesheet" href="css/IRANSans_FaNum/css/fontiran.css" />
+	<style>
+		/* تغییر رنگ در وضعیت hover */
+		.svg-hover:hover {
+			fill: red;
+			/* تغییر رنگ به قرمز */
+		}
+
+		.img-hover {
+			transition: filter 0.3s ease;
+			/* اضافه کردن انیمیشن تغییر فیلتر */
+		}
+
+		.img-hover:hover {
+			filter: hue-rotate(180deg);
+			/* تغییر رنگ با فیلتر */
+		}
+	</style>
+
 </head>
 
 
@@ -41,9 +60,6 @@ defined('SubTitle') || define('SubTitle', 'توضیح سایت');
 				<hr />
 				<span class="byline"><?php echo SubTitle; ?></span>
 			</header>
-			<footer>
-				<a href="#banner" class="button circled scrolly">مشاهده</a>
-			</footer>
 		</div>
 
 		<?php include('nav.php') ?>

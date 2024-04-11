@@ -2,7 +2,7 @@
 <div class="wrapper style2">
 
     <article id="main" class="container special">
-        <a href="http://20script.ir/" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+        <a href="#" class="image featured"><img src="images/pic06.jpg"/></a>
         <header>
             <h2><a href="#">عنوان مطلب</a></h2>
             <span class="byline">

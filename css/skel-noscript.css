@@ -1,6 +1,6 @@
 /* Resets (http://meyerweb.com/eric/tools/css/reset/ | v2.0 | 20110126 | License: none (public domain)) */
 
-	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}body{-webkit-text-size-adjust:none}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}body{-webkit-text-size-adjust:none}
 
 /* Box Model */
 
@@ -20,8 +20,8 @@
 
 	.container {
 		width: 1200px;
-		margin-left: auto;
 		margin-right: auto;
+		margin-left: auto;
 	}
 
 	/* Modifiers */
@@ -52,21 +52,21 @@
 		.\33 u { width: 25% }
 		.\32 u { width: 16.6666666667% }
 		.\31 u { width: 8.3333333333% }
-		.\-11u { margin-left: 91.6666666667% }
-		.\-10u { margin-left: 83.3333333333% }
-		.\-9u { margin-left: 75% }
-		.\-8u { margin-left: 66.6666666667% }
-		.\-7u { margin-left: 58.3333333333% }
-		.\-6u { margin-left: 50% }
-		.\-5u { margin-left: 41.6666666667% }
-		.\-4u { margin-left: 33.3333333333% }
-		.\-3u { margin-left: 25% }
-		.\-2u { margin-left: 16.6666666667% }
-		.\-1u { margin-left: 8.3333333333% }
+		.\-11u { margin-right: 91.6666666667% }
+		.\-10u { margin-right: 83.3333333333% }
+		.\-9u { margin-right: 75% }
+		.\-8u { margin-right: 66.6666666667% }
+		.\-7u { margin-right: 58.3333333333% }
+		.\-6u { margin-right: 50% }
+		.\-5u { margin-right: 41.6666666667% }
+		.\-4u { margin-right: 33.3333333333% }
+		.\-3u { margin-right: 25% }
+		.\-2u { margin-right: 16.6666666667% }
+		.\-1u { margin-right: 8.3333333333% }
 
 		.row > * {
-			padding: 48px 0 0 48px;
-			float: left;
+			padding: 48px 48px 0 0;
+			float: right;
 			-moz-box-sizing: border-box;
 			-webkit-box-sizing: border-box;
 			-o-box-sizing: border-box;
@@ -79,7 +79,7 @@
 		}
 
 		.row {
-			margin-left: -48px;
+			margin-right: -48px;
 		}
 
 	/* Rows */
@@ -104,7 +104,7 @@
 			/* Flush */
 
 				.row.flush {
-					margin-left: 0;
+					margin-right: 0;
 				}
 
 				.row.flush > * {
@@ -114,7 +114,7 @@
 			/* Quarter */
 
 				.row.quarter > * {
-					padding: 12px 0 0 12px;
+					padding: 12px 12px 0 0;
 				}
 
 				.row.quarter + .row.quarter > * {
@@ -122,13 +122,13 @@
 				}
 
 				.row.quarter {
-					margin-left: -12px;
+					margin-right: -12px;
 				}
 
 			/* Half */
 
 				.row.half > * {
-					padding: 24px 0 0 24px;
+					padding: 24px 24px 0 0;
 				}
 
 				.row.half + .row.half > * {
@@ -136,13 +136,13 @@
 				}
 
 				.row.half {
-					margin-left: -24px;
+					margin-right: -24px;
 				}
 
 			/* One and (a) Half */
 
 				.row.oneandhalf > * {
-					padding: 72px 0 0 72px;
+					padding: 72px 72px 0 0;
 				}
 
 				.row.oneandhalf + .row.oneandhalf > * {
@@ -150,13 +150,13 @@
 				}
 
 				.row.oneandhalf {
-					margin-left: -72px;
+					margin-right: -72px;
 				}
 
 			/* Double */
 
 				.row.double > * {
-					padding: 96px 0 0 96px;
+					padding: 96px 96px 0 0;
 				}
 
 				.row.double + .row.double > * {
@@ -164,5 +164,5 @@
 				}
 
 				.row.double {
-					margin-left: -96px;
+					margin-right: -96px;
 				}
