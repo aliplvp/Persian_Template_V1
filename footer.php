@@ -29,9 +29,6 @@
 						<img src="images/pic10.jpg" alt="تصویر 1" class="m-2">
 					</div>
 
-					<div class="col">
-						<img src="images/pic10.jpg" alt="تصویر 2" class="m-2">
-					</div>
 				</div>
 				<div class="row d-flex justify-content-end">
 
@@ -55,9 +52,6 @@
 						<img src="images/pic10.jpg" alt="تصویر 1" class="m-2">
 					</div>
 
-					<div class="col">
-						<img src="images/pic10.jpg" alt="تصویر 2" class="m-2">
-					</div>
 				</div>
 
 
